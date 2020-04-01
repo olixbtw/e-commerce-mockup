@@ -1,0 +1,14 @@
+.btn {
+  background: none;
+  border: none;
+  outline: none;
+
+  padding: 10px;
+  font-weight: bold;
+
+  border: 2px dashed $color-black-05;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background: transparent;
+  color: $color-black-05;
+}

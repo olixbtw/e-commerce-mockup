@@ -1,15 +1,17 @@
 <template>
   <div id="app">
-    <Header />
-    <HeroSlide />
-    <Advantages />
-    <PostsTall />
-    <PostsTall />
-    <PostsTall />
-    <BlogCard />
-    <CtaForm />
-    <Footer />
-    <Arrow />
+    <div class="container">
+      <Header />
+      <HeroSlide />
+      <Advantages />
+      <PostsTall />
+      <PostsTall />
+      <PostsTall />
+      <BlogCard />
+      <CtaForm />
+      <Footer />
+      <Arrow />
+    </div>
   </div>
 </template>
 
@@ -40,15 +42,4 @@ export default {
 };
 </script>
 
-<style lang="scss">
-@import url('./style/style.scss');
-
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style lang="scss"></style>

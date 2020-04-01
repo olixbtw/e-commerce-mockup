@@ -1,5 +1,5 @@
 <template>
-  <div>Footer</div>
+  <footer>Footer</footer>
 </template>
 
 <script>
@@ -8,4 +8,10 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+// @import "@/styles/_variables.scss";
+
+footer {
+  background: lighten($color-red, 30%);
+}
+</style>
