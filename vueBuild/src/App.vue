@@ -1,17 +1,15 @@
 <template>
   <div id="app">
-    <div class="container">
-      <Header />
-      <HeroSlide />
-      <Advantages />
-      <PostsTall />
-      <PostsTall />
-      <PostsTall />
-      <BlogCard />
-      <CtaForm />
-      <Footer />
-      <Arrow />
-    </div>
+    <Header />
+    <HeroSlide />
+    <Advantages />
+    <PostsTall />
+    <PostsTall />
+    <PostsTall />
+    <BlogCard />
+    <CtaForm />
+    <Footer />
+    <Arrow />
   </div>
 </template>
 

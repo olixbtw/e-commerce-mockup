@@ -1,5 +1,9 @@
 <template>
-  <footer>Footer</footer>
+  <footer class="footer">
+    <div class="container">
+      Footer
+    </div>
+  </footer>
 </template>
 
 <script>
@@ -9,9 +13,9 @@ export default {
 </script>
 
 <style lang="scss">
-// @import "@/styles/_variables.scss";
-
-footer {
-  background: lighten($color-red, 30%);
+.footer {
+  background: $color-black;
+  color: $color-white;
+  padding: 30px 0 20px;
 }
 </style>

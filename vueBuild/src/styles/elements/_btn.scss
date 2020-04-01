@@ -1,14 +1,28 @@
+$padX: 12px;
+$padY: 10px;
+
 .btn {
   background: none;
   border: none;
   outline: none;
 
-  padding: 10px;
+  padding: $padY $padX;
   font-weight: bold;
 
-  border: 2px dashed $color-black-05;
-  box-sizing: border-box;
-  border-radius: 5px;
-  background: transparent;
-  color: $color-black-05;
+  border: 2px solid $color-black;
+  background: $color-black;
+  color: $color-white;
+
+  &--empty {
+    border-radius: 5px;
+    color: $color-black-05;
+    border: 2px dashed $color-black-05;
+    background: transparent;
+    border: 2px dashed $color-black-05;
+  }
+  &--big {
+    font-size: 24px;
+    line-height: 28px;
+    padding: $padY * 2 $padX * 3;
+  }
 }

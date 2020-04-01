@@ -1,5 +1,9 @@
 <template>
-  <div>BlogCard</div>
+  <section class="blog">
+    <div class="container">
+      BlogCard
+    </div>
+  </section>
 </template>
 
 <script>
@@ -8,4 +12,8 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.blog {
+  padding: 65px 0 90px;
+}
+</style>

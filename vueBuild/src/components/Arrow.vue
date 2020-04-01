@@ -1,5 +1,5 @@
 <template>
-  <div>Arrow</div>
+  <div class="arrow">Arrow</div>
 </template>
 
 <script>
@@ -8,4 +8,8 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.arrow {
+  display: none;
+}
+</style>

@@ -1,5 +1,9 @@
 <template>
-  <div>PostsTall</div>
+  <section class="posts">
+    <div class="container">
+      PostsTall
+    </div>
+  </section>
 </template>
 
 <script>
@@ -8,4 +12,8 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.posts {
+  padding: 65px 0 75px;
+}
+</style>
