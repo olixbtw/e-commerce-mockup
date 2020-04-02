@@ -2,4 +2,7 @@ task.txt
 task.png
 
 /regularBuild/
+/regularBuild/node modules/
+
 /vueBuild/
+/vueBuild/node modules/
