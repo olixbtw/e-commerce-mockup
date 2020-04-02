@@ -8,21 +8,32 @@ $padY: 10px;
 
   padding: $padY $padX;
   font-weight: bold;
+  cursor: pointer;
 
-  border: 2px solid $color-black;
-  background: $color-black;
-  color: $color-white;
+  border-width: 2px;
+  border-style: solid;
+  border-color: $color-white;
+  background: $color-white;
+  color: $color-black;
+
+  transition: .2s all ease-in-out;
 
   &--empty {
     border-radius: 5px;
     color: $color-black-05;
-    border: 2px dashed $color-black-05;
     background: transparent;
-    border: 2px dashed $color-black-05;
+    border-style: dashed;
+    border-color: $color-black-05;
   }
   &--big {
     font-size: 24px;
     line-height: 28px;
     padding: $padY * 2 $padX * 3;
+  }
+
+  &--black {
+    border-color: $color-black;
+    background: $color-black;
+    color: $color-white;
   }
 }

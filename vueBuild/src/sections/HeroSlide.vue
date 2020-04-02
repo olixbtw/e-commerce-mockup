@@ -10,7 +10,7 @@
             do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
 
-          <button class="btn btn--big">Дізнатись більше ></button>
+          <button class="btn btn--big slide__button btn--black">Дізнатись більше ›</button>
 
           <img
             class="slide__background"
@@ -28,7 +28,7 @@
             do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
 
-          <button class="btn btn--big">Дізнатись більше ></button>
+          <button class="btn btn--big slide__button">Дізнатись більше ></button>
 
           <img
             class="slide__background"
@@ -46,7 +46,7 @@
             do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
 
-          <button class="btn btn--big">Дізнатись більше ></button>
+          <button class="btn btn--big slide__button">Дізнатись більше ></button>
 
           <img
             class="slide__background"
@@ -93,7 +93,7 @@ export default {
     width: 100%;
     flex-shrink: 0;
     transition: 0.75s opacity ease-in-out;
-    opacity: .75;
+    opacity: 0.75;
   }
 
   @include addSlide(1);
@@ -126,6 +126,11 @@ export default {
     height: 100%;
     z-index: -1;
     object-fit: cover;
+  }
+  &__button {
+    &:hover {
+      box-shadow: 2px 4px 8px $color-black-01;
+    }
   }
 }
 </style>
