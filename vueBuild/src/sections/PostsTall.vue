@@ -1,5 +1,5 @@
 <template>
-  <section class="posts">
+  <section class="posts" v-bind:class="num % 2 ? '' : 'posts--background-dark'">
     <div class="container">
       <h2 class="posts__header">Топ продажу</h2>
       <div class="posts__wrapper">
@@ -16,6 +16,7 @@ import ItemPost from '../components/ItemPost';
 
 export default {
   name: 'PostsTall',
+  props: ['num'],
   components: {
     ItemPost
   },
@@ -30,7 +31,11 @@ $gap: 20px;
 $wrapperWidth: calc(100% + #{$gap});
 
 .posts {
-  padding: 60px 0 ;
+  padding: 60px 0;
+
+  &--background-dark {
+    background: $color-light1;
+  }
 
   &__header {
     text-align: center;

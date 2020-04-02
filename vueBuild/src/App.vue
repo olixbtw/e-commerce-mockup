@@ -3,9 +3,7 @@
     <Header />
     <HeroSlide />
     <Advantages />
-    <PostsTall />
-    <PostsTall />
-    <PostsTall />
+    <PostsTall v-for="(i, index) of n" :key="index" :num="index" />
     <BlogCard />
     <CtaForm />
     <Footer />
@@ -27,6 +25,9 @@ import PostsTall from './sections/PostsTall.vue';
 export default {
   name: 'App',
   title: 'E-commerce',
+  data: () => ({
+    n: 3
+  }),
   components: {
     Arrow,
     Advantages,

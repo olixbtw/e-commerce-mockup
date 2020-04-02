@@ -31,10 +31,18 @@ export default {
 
 <style lang="scss">
 .post-card {
+  background: $color-white;
   transition: 0.25s box-shadow ease-in-out;
   box-shadow: 0px 0px 6px $color-black-01;
   &:hover {
     box-shadow: 0px 0px 12px $color-black-025;
+    cursor: pointer;
+    .post-card__btn {
+      color: $color-black;
+      &.btn--black {
+        color: $color-white;
+      }
+    }
   }
   &__figure {
     height: 270px;
@@ -63,9 +71,6 @@ export default {
     min-height: 50px;
     border: none;
     color: $color-black-05;
-    &:hover {
-      color: $color-black;
-    }
     &.btn--black {
       color: $color-white;
       background: $color-black-066;
