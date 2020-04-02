@@ -2,13 +2,20 @@
   <section class="blog">
     <div class="container">
       <h2 class="blog__title">Новини</h2>
+      <NewsItem class="blog__item" />
+      <NewsItem class="blog__item" />
     </div>
   </section>
 </template>
 
 <script>
+import NewsItem from '../components/NewsItem';
+
 export default {
-  name: 'BlogCard'
+  name: 'BlogCard',
+  components: {
+    NewsItem
+  }
 };
 </script>
 
@@ -16,8 +23,17 @@ export default {
 .blog {
   padding: 65px 0 90px;
   &__title {
+    width: 100%;
     text-align: center;
     margin-bottom: 30px;
+  }
+  &__item {
+    width: calc(50% - 10px);
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 </style>
