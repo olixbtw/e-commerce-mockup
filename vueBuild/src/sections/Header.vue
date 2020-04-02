@@ -142,7 +142,6 @@ export default {
   }
   &__link {
     color: inherit;
-    text-decoration: none;
     position: relative;
     transition: 0.2s all ease-in-out;
     position: relative;
