@@ -130,8 +130,6 @@ export default {
   }
   &__language-switcher {
     .language-switcher__item {
-      // margin-right: 8px;
-      // cursor: pointer;
       &:hover {
         color: $color-white;
       }

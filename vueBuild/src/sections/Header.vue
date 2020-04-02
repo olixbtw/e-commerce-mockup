@@ -120,13 +120,9 @@ export default {
       margin-left: 0;
     }
   }
-  &__search {
-  }
   &__cart {
     display: flex;
     align-items: center;
-  }
-  &__login {
   }
 }
 
@@ -175,7 +171,7 @@ export default {
     &:hover {
       color: $color-black;
     }
-    &.active{
+    &.active {
       text-decoration: underline;
     }
   }

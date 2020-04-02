@@ -10,7 +10,9 @@
             do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
 
-          <button class="btn btn--big slide__button btn--black">Дізнатись більше ›</button>
+          <button class="btn btn--big slide__button btn--black">
+            Дізнатись більше ›
+          </button>
 
           <img
             class="slide__background"
@@ -55,6 +57,11 @@
           />
         </div>
       </li>
+      <ul class="slider__controls slider-controls">
+        <li class="slider-controls__item"></li>
+        <li class="slider-controls__item"></li>
+        <li class="slider-controls__item active"></li>
+      </ul>
     </ul>
   </section>
 </template>
@@ -101,6 +108,31 @@ export default {
   @include addSlide(3);
 }
 
+.slider-controls {
+  position: absolute;
+  display: flex;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &__item {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: $color-white-03;
+    border: 2px solid $color-black;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.1s all ease-in-out;
+    &.active {
+      background: $color-light2;
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
 .slide {
   position: relative;
   display: flex;
@@ -120,8 +152,6 @@ export default {
   &__background {
     position: absolute;
     top: 0;
-    // bottom: 0;
-    // right: 0;
     left: 0;
     width: 100%;
     height: 100%;

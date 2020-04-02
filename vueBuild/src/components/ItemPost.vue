@@ -1,5 +1,66 @@
 <template>
   <div class="post-card">
+    <!-- <span class="post-card__emphasis post-card__emphasis--rating">
+      <svg
+        width="21"
+        height="19"
+        viewBox="0 0 21 19"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M10.5 1.61804L12.3819 7.40983L12.4941 7.75532H12.8574H18.9473L14.0205 11.3348L13.7266 11.5484L13.8388 11.8939L15.7207 17.6857L10.7939 14.1061L10.5 13.8926L10.2061 14.1061L5.27931 17.6857L7.16118 11.8939L7.27344 11.5484L6.97954 11.3348L2.05275 7.75532H8.1426H8.50587L8.61813 7.40983L10.5 1.61804Z"
+        />
+      </svg>
+      <svg
+        width="21"
+        height="19"
+        viewBox="0 0 21 19"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M10.5 1.61804L12.3819 7.40983L12.4941 7.75532H12.8574H18.9473L14.0205 11.3348L13.7266 11.5484L13.8388 11.8939L15.7207 17.6857L10.7939 14.1061L10.5 13.8926L10.2061 14.1061L5.27931 17.6857L7.16118 11.8939L7.27344 11.5484L6.97954 11.3348L2.05275 7.75532H8.1426H8.50587L8.61813 7.40983L10.5 1.61804Z"
+        />
+      </svg>
+      <svg
+        width="21"
+        height="19"
+        viewBox="0 0 21 19"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M10.5 1.61804L12.3819 7.40983L12.4941 7.75532H12.8574H18.9473L14.0205 11.3348L13.7266 11.5484L13.8388 11.8939L15.7207 17.6857L10.7939 14.1061L10.5 13.8926L10.2061 14.1061L5.27931 17.6857L7.16118 11.8939L7.27344 11.5484L6.97954 11.3348L2.05275 7.75532H8.1426H8.50587L8.61813 7.40983L10.5 1.61804Z"
+        />
+      </svg>
+      <svg
+        width="21"
+        height="19"
+        viewBox="0 0 21 19"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M10.5 1.61804L12.3819 7.40983L12.4941 7.75532H12.8574H18.9473L14.0205 11.3348L13.7266 11.5484L13.8388 11.8939L15.7207 17.6857L10.7939 14.1061L10.5 13.8926L10.2061 14.1061L5.27931 17.6857L7.16118 11.8939L7.27344 11.5484L6.97954 11.3348L2.05275 7.75532H8.1426H8.50587L8.61813 7.40983L10.5 1.61804Z"
+        />
+      </svg>
+      <svg
+        width="21"
+        height="19"
+        viewBox="0 0 21 19"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M10.5 1.61804L12.3819 7.40983L12.4941 7.75532H12.8574H18.9473L14.0205 11.3348L13.7266 11.5484L13.8388 11.8939L15.7207 17.6857L10.7939 14.1061L10.5 13.8926L10.2061 14.1061L5.27931 17.6857L7.16118 11.8939L7.27344 11.5484L6.97954 11.3348L2.05275 7.75532H8.1426H8.50587L8.61813 7.40983L10.5 1.61804Z"
+        />
+      </svg>
+    </span> -->
+    <span class="post-card__emphasis post-card__emphasis--newest">Новинка</span>
+    <!-- <span class="post-card__emphasis post-card__emphasis--top-sell"
+      >топ продажу</span
+    > -->
     <figure class="post-card__figure">
       <img
         class="post-card__image"
@@ -32,6 +93,38 @@ export default {
 
 <style lang="scss">
 .post-card {
+  position: relative;
+  &__emphasis {
+    font-size: 14px;
+    color: $color-white;
+    z-index: 1;
+    position: absolute;
+    top: 9px;
+    right: 11px;
+    border-radius: 5px;
+    padding: 4px 9px;
+    text-transform: uppercase;
+
+    &--rating {
+      // background: green;
+      // background-image: linear-gradient(45deg, #f3ec78, #af4261);
+      // background-clip: text;
+      // -webkit-background-clip: text;
+      // -webkit-text-fill-color: transparent;
+      // -moz-background-clip: text;
+      // -moz-text-fill-color: transparent;
+      svg {
+        fill: $color-yellow;
+        stroke: $color-yellow;
+      }
+    }
+    &--top-sell {
+      background: $color-purple;
+    }
+    &--newest {
+      background: $color-green;
+    }
+  }
   background: $color-white;
   transition: 0.25s box-shadow ease-in-out;
   box-shadow: 0px 0px 6px $color-black-01;
@@ -49,12 +142,6 @@ export default {
     height: 270px;
     width: 100%;
     position: relative;
-    // max-height: 270px;
-    // &:after {
-    //   content: '';
-    //   display: block;
-    //   padding-top: 100%;
-    // }
   }
   &__image {
     position: absolute;
@@ -72,7 +159,6 @@ export default {
   }
   &__price {
     display: block;
-    // font-weight: bold;
     margin-top: 15px;
     font-size: 18px;
   }

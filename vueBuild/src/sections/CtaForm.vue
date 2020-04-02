@@ -49,7 +49,6 @@ export default {
   background: $color-light1;
   &__title {
     text-align: center;
-    // margin-bottom: 30px;
   }
   &__subtitle {
     color: $color-dark;
@@ -65,7 +64,6 @@ export default {
     width: 100%;
     justify-content: space-between;
     align-items: stretch;
-    // margin-bottom: 50px;
 
     .btn,
     .form__input {
