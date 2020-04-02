@@ -1,5 +1,5 @@
 task.txt
 task.png
 
-/regularBuild/
-/vueBuild/
+# /regularBuild/
+# /vueBuild/
