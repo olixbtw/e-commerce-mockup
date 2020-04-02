@@ -9,10 +9,11 @@
     </figure>
     <div class="post-card__content">
       <p>Артикул <b>1234</b></p>
-      <h4>Двоспальний Комплект постільної білизни "Камея"</h4>
+      <h4 class="post-card__title">
+        Двоспальний Комплект постільної білизни "Камея"
+      </h4>
       <p>Красивий та зручний постільний набір</p>
-      <br />
-      <p>397.00 грн</p>
+      <span class="post-card__price">397.00 <small>грн</small></span>
     </div>
     <button class="btn post-card__btn post-card__btn--big btn--black">
       Купити в один клік ›
@@ -63,7 +64,17 @@ export default {
     top: 0;
   }
   &__content {
-    padding: 10px;
+    padding: 12px 10px 7px;
+  }
+  &__title {
+    font-size: 20px;
+    margin-bottom: 7px;
+  }
+  &__price {
+    display: block;
+    // font-weight: bold;
+    margin-top: 15px;
+    font-size: 18px;
   }
   &__btn {
     display: block;
@@ -71,6 +82,7 @@ export default {
     min-height: 50px;
     border: none;
     color: $color-black-05;
+    font-size: 14px;
     &.btn--black {
       color: $color-white;
       background: $color-black-066;
@@ -80,7 +92,7 @@ export default {
       }
     }
     &--big {
-      font-size: 18px;
+      font-size: 17px;
     }
   }
 }

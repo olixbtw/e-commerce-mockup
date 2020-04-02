@@ -94,10 +94,10 @@ export default {
 .header {
   color: $color-black-05;
   background: $color-white;
-  padding: 9px 0;
+  padding: 6px 0 8px;
   &__container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
   &__section {
     display: flex;
@@ -115,7 +115,7 @@ export default {
     }
   }
   &__section-item {
-    margin-left: 28px;
+    margin-left: 40px;
     &:first-child {
       margin-left: 0;
     }
@@ -134,7 +134,7 @@ export default {
   display: flex;
 
   &__item {
-    margin-right: 38px;
+    margin-right: 39px;
     cursor: pointer;
     &:hover {
       color: $color-black;
@@ -171,7 +171,7 @@ export default {
 .language-switcher {
   display: flex;
   &__item {
-    margin-right: 10px;
+    margin-right: 8px;
     cursor: pointer;
     &:hover {
       color: $color-black;
@@ -181,14 +181,16 @@ export default {
 
 .socials {
   display: flex;
+  margin-right: -7px;
   &__item {
-    margin: 0 5px;
+    margin: 0 7px;
     transition: 0.2s all ease-in-out;
     &:hover {
       transform: scale(1.05);
     }
   }
   &__link {
+    display: block;
   }
   &__image {
   }
@@ -203,6 +205,7 @@ export default {
 }
 
 .cart {
+  margin-left: 30px;
   cursor: pointer;
   &:hover {
     color: $color-black-066;

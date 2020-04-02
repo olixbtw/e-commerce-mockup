@@ -16,7 +16,7 @@ $padY: 6px;
   background: $color-white;
   color: $color-black;
 
-  transition: .15s all ease-in-out;
+  transition: 0.15s all ease-in-out;
 
   &--empty {
     border-radius: 5px;
@@ -24,17 +24,17 @@ $padY: 6px;
     border-style: dashed;
     color: $color-black-05;
     border-color: $color-black-05;
-    
-    &:hover{
+
+    &:hover {
       color: $color-black-066;
       border-color: $color-black-066;
       // background: $color-black-01;
     }
   }
   &--big {
-    font-size: 24px;
+    font-size: 23px;
     line-height: 28px;
-    padding: $padY * 3 $padX * 3;
+    padding: $padY * 3 $padX * 2 + 20px;
   }
 
   &--black {

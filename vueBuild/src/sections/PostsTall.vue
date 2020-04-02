@@ -1,7 +1,7 @@
 <template>
   <section class="posts" v-bind:class="num % 2 ? '' : 'posts--background-dark'">
     <div class="container">
-      <h2 class="posts__header">Топ продажу</h2>
+      <h2 class="posts__header">Топ Продажу</h2>
       <div class="posts__wrapper">
         <div v-for="(i, index) of n" v-bind:key="index" class="posts__item">
           <ItemPost />
@@ -31,7 +31,7 @@ $gap: 20px;
 $wrapperWidth: calc(100% + #{$gap});
 
 .posts {
-  padding: 60px 0;
+  padding: 50px 0 40px;
 
   &--background-dark {
     background: $color-light1;
@@ -39,11 +39,12 @@ $wrapperWidth: calc(100% + #{$gap});
 
   &__header {
     text-align: center;
+    margin-bottom: 20px;
   }
   &__wrapper {
     overflow: hidden;
     width: $wrapperWidth;
-    margin-left: -$gap;
+    margin-left: -$gap / 2;
     display: flex;
   }
   &__item {

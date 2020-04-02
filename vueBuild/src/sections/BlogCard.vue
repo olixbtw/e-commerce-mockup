@@ -1,7 +1,7 @@
 <template>
   <section class="blog">
     <div class="container">
-      BlogCard
+      <h2 class="blog__title">Новини</h2>
     </div>
   </section>
 </template>
@@ -15,5 +15,9 @@ export default {
 <style lang="scss">
 .blog {
   padding: 65px 0 90px;
+  &__title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
 }
 </style>

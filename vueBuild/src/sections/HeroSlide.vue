@@ -89,7 +89,7 @@ export default {
   transition: 0.5s margin ease-in-out;
 
   &__item {
-    padding: 100px 0;
+    padding: 40px 70px 130px;
     width: 100%;
     flex-shrink: 0;
     transition: 0.75s opacity ease-in-out;
@@ -108,11 +108,12 @@ export default {
   flex-direction: column;
 
   &__title {
-    margin-bottom: 60px;
+    margin-bottom: 67px;
   }
   &__text {
-    margin-bottom: 50px;
+    margin-bottom: 53px;
     font-size: 24px;
+    line-height: 34px;
     text-shadow: 0px 4px 4px $color-black-025;
     max-width: 800px;
   }
