@@ -37,7 +37,7 @@ export default {
   methods: {
     submitHandler(e) {
       e.preventDefault();
-      console.log(e.target);
+      // console.log(e.target);
     }
   }
 };
