@@ -16,7 +16,7 @@
           </ul>
         </nav>
         <ul class="language-switcher">
-          <li class="language-switcher__item">Укр</li>
+          <li class="language-switcher__item active">Укр</li>
           <li class="language-switcher__item">Рос</li>
         </ul>
       </div>
@@ -39,7 +39,7 @@
           Кошик
         </div>
         <button class="header__login header__section-item btn btn--empty">
-          Мой кабинет
+          Мій кабінет
         </button>
         <ul class="header__socials header__section-item socials">
           <li class="socials__item">
@@ -174,6 +174,9 @@ export default {
     cursor: pointer;
     &:hover {
       color: $color-black;
+    }
+    &.active{
+      text-decoration: underline;
     }
   }
 }
