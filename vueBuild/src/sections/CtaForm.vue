@@ -24,7 +24,7 @@
           type="email"
           required
         />
-        <button class="btn btn--black" type="submit">Submit</button>
+        <button class="btn btn--black" type="submit">Підписатися</button>
         <p class="form__help">* - обов’язкове поле для заповнення</p>
       </form>
     </div>
@@ -45,7 +45,7 @@ export default {
 
 <style lang="scss">
 .cta {
-  padding: 65px 0 50px;
+  padding: 65px 0 45px;
   background: $color-light1;
   &__title {
     text-align: center;
@@ -54,7 +54,9 @@ export default {
   &__subtitle {
     color: $color-dark;
     text-align: center;
-    margin-bottom: 40px;
+
+    margin-bottom: 46px;
+    margin-top: 18px;
     font-size: 18px;
   }
   &__form {
@@ -71,6 +73,7 @@ export default {
     }
 
     .btn {
+      font-size: 17px;
       &:hover {
         opacity: 0.8;
       }
@@ -80,7 +83,7 @@ export default {
 
 .form {
   &__input {
-    font-size: 17px;
+    font-size: 19px;
     background: $color-white;
     border-width: 2px;
     border-style: solid;
@@ -90,7 +93,7 @@ export default {
 
     transition: 0.2s all ease-in-out;
     &--text {
-      padding: 10px;
+      padding: 11px 11px 8px;
 
       &:active {
         border-style: dashed;

@@ -15,7 +15,7 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore...
       </p>
-      <a class="news-card__link" href="/">Читати більше ›</a>
+      <a class="news-card__link" href="/">Читати більше  ›</a>
     </div>
   </div>
 </template>
@@ -49,14 +49,19 @@ export default {
     top: 0;
   }
   &__content {
-    padding: 10px;
+    padding: 11px 10px 19px;
     display: flex;
     flex-direction: column;
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 1.5;
   }
   &__title {
-    font-size: 20px;
-    margin-bottom: 7px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: -2px;
+  }
+  &__date {
+    font-size: 12px;
   }
   &__link {
     font-size: 14px;

@@ -114,9 +114,10 @@ export default {
   background: $color-black;
   color: $color-light2;
   padding: 30px 0 20px;
-  line-height: 1.4;
+  line-height: 1.3;
   &__menu {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
   }

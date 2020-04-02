@@ -21,11 +21,11 @@ export default {
 
 <style lang="scss">
 .blog {
-  padding: 65px 0 90px;
+  padding: 65px 0 86px;
   &__title {
     width: 100%;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
   &__item {
     width: calc(50% - 10px);

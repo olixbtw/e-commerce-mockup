@@ -94,7 +94,7 @@ export default {
 .header {
   color: $color-black-05;
   background: $color-white;
-  padding: 6px 0 8px;
+  padding: 10px 0 8px;
   &__container {
     display: flex;
     justify-content: space-between;
@@ -115,7 +115,7 @@ export default {
     }
   }
   &__section-item {
-    margin-left: 40px;
+    margin-left: 45px;
     &:first-child {
       margin-left: 0;
     }
