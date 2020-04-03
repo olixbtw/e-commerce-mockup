@@ -57,10 +57,10 @@
           />
         </div>
       </li>
-      <ul class="slider__controls slider-controls">
-        <li class="slider-controls__item"></li>
-        <li class="slider-controls__item"></li>
+      <ul class="slider__controls slider-controls" @click="changeSlide">
         <li class="slider-controls__item active"></li>
+        <li class="slider-controls__item"></li>
+        <li class="slider-controls__item"></li>
       </ul>
     </ul>
   </section>
@@ -68,7 +68,31 @@
 
 <script>
 export default {
-  name: 'HeroSlide'
+  name: 'HeroSlide',
+  methods: {
+    changeSlide: e => {
+      let oldClass,
+        newClass,
+        controlsElement = e.target.parentElement,
+        sliderElement = e.target.parentElement.parentElement;
+
+      controlsElement.getElementsByTagName('li').forEach((el, i) => {
+        if (e.target === el) newClass = `slider--item-active-${i + 1}`;
+      });
+      sliderElement.classList.forEach(el => {
+        if (/slider--item-active-\d/.test(el)) oldClass = el;
+      });
+
+      if (oldClass !== newClass) {
+        controlsElement.getElementsByTagName('li').forEach(el => {
+          el.classList.remove('active');
+          if (e.target === el) el.classList.add('active');
+        });
+        sliderElement.classList.remove(oldClass);
+        sliderElement.classList.add(newClass);
+      }
+    }
+  }
 };
 </script>
 
@@ -76,6 +100,7 @@ export default {
 .hero {
   color: $color-white;
   overflow: hidden;
+  position: relative;
 }
 
 @mixin addSlide($n) {
@@ -89,7 +114,7 @@ export default {
 }
 
 .slider {
-  position: relative;
+  // position: relative;
   min-height: 700px;
   display: flex;
   align-content: stretch;

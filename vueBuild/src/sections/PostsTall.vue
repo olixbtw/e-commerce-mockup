@@ -1,10 +1,9 @@
 <template>
   <section class="posts" v-bind:class="num % 2 ? '' : 'posts--background-dark'">
     <div class="container">
-      <h2 class="posts__header section-header">
+      <h2 class="posts__title section-title">
         Топ Продажу
-
-        <span class="section-header__expander">Дивитись Всі</span>
+        <span class="section-title__expander">Дивитись Всі</span>
       </h2>
       <div class="posts__wrapper">
         <div class="posts__arrow posts__arrow--left">›</div>
@@ -82,7 +81,7 @@ $wrapperWidth: calc(100% + #{$gap});
   }
 }
 
-.section-header {
+.section-title {
   position: relative;
   &__expander {
     position: absolute;

@@ -1,7 +1,10 @@
 <template>
   <section class="blog">
     <div class="container">
-      <h2 class="blog__title">Новини</h2>
+      <h2 class="blog__title section-title">
+        Новини
+        <span class="section-title__expander">Дивитись Всі</span>
+      </h2>
       <NewsItem class="blog__item" />
       <NewsItem class="blog__item" />
     </div>
