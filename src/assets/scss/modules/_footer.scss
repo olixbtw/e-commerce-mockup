@@ -1,4 +1,3 @@
-
 .footer {
   background: $color-black;
   color: $color-light2;
@@ -28,6 +27,16 @@
     color: inherit;
     &:hover {
       color: $color-white;
+    }
+  }
+  &__socials {
+    margin-left: -$socialsGap;
+    margin-right: unset;
+    .socials__item {
+      color: $color-white-05;
+      &:hover {
+        color: $color-white;
+      }
     }
   }
 }
