@@ -126,6 +126,14 @@ function fillSections() {
     `
   }
 
+  function setGradientBG(pers) {
+    return `
+      background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,0)),color-stop(${pers}%,rgba(0,0,0,0)),color-stop(${pers}%,#ffc700),to(#ffc700));
+      background-image: -o-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) ${pers}%,#ffc700 ${pers}%,#ffc700 100%);
+      background-image: linear-gradient(90deg,rgba(0,0,0,0),rgba(0,0,0,0) ${pers}%,#ffc700 0,#ffc700);
+    `
+  }
+
   function generateItem(post, filter) {
     let filterData, postOptions;
 
@@ -142,36 +150,8 @@ function fillSections() {
         break;
       case filters.topRated:
         filterData = `
-          <span class="post-card__emphasis post-card__emphasis--rating" >
-            ${[...Array(Math.ceil(post.additional.rating) - Math.round(post.additional.rating))].map(() => `
-              <svg
-                width="21"
-                height="19"
-                viewBox="0 0 21 19"
-                fill="none"
-                stroke="#FFC700"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M10.5 1.61804L12.3819 7.40983L12.4941 7.75532H12.8574H18.9473L14.0205 11.3348L13.7266 11.5484L13.8388 11.8939L15.7207 17.6857L10.7939 14.1061L10.5 13.8926L10.2061 14.1061L5.27931 17.6857L7.16118 11.8939L7.27344 11.5484L6.97954 11.3348L2.05275 7.75532H8.1426H8.50587L8.61813 7.40983L10.5 1.61804Z"
-                />
-              </svg>
-            `).join('')}
-
-            ${[...Array(Math.round(post.additional.rating))].map(() => `
-              <svg
-                width="21"
-                height="19"
-                viewBox="0 0 21 19"
-                fill="#FFC700"
-                stroke="#FFC700"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M10.5 1.61804L12.3819 7.40983L12.4941 7.75532H12.8574H18.9473L14.0205 11.3348L13.7266 11.5484L13.8388 11.8939L15.7207 17.6857L10.7939 14.1061L10.5 13.8926L10.2061 14.1061L5.27931 17.6857L7.16118 11.8939L7.27344 11.5484L6.97954 11.3348L2.05275 7.75532H8.1426H8.50587L8.61813 7.40983L10.5 1.61804Z"
-                />
-              </svg>
-            `).join('')}
+          <span class="post-card__emphasis post-card__emphasis--rating" style="${setGradientBG(100 - (post.additional.rating / 5 * 100))}">
+            A A A A A
           </span >
         `
         break;

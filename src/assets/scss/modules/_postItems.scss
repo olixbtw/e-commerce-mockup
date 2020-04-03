@@ -18,20 +18,22 @@ $wrapperWidth: calc(100% + #{$grid-gap});
     margin-left: -$grid-gap / 2;
   }
   &__item {
-    transition: 0.25s margin ease-in-out;
+    will-change: margin;
+    transition: 0.35s margin ease-in-out;
     flex-shrink: 0;
     width: 25%;
     padding: $grid-gap $grid-gap/2;
   }
   &__arrow {
     $arrowOffset: 31px;
-    
+
     padding: 7px;
     font-size: 45px;
     position: absolute;
     top: 50%;
     color: $color-black-05;
     cursor: pointer;
+    will-change: opacity; 
     transition: 0.1s all ease-in-out;
     user-select: none;
     &:hover {
@@ -75,6 +77,8 @@ $wrapperWidth: calc(100% + #{$grid-gap});
 .post-card {
   position: relative;
   background: $color-white;
+
+  will-change: box-shadow; 
   transition: 0.25s box-shadow ease-in-out;
   box-shadow: 0px 0px 6px $color-black-01;
   &:hover {
@@ -116,6 +120,25 @@ $wrapperWidth: calc(100% + #{$grid-gap});
     padding: 4px 9px;
     text-transform: uppercase;
 
+    &--rating {
+      letter-spacing: 1.5px;
+      font-size: 20px;
+      @include setIconFont();
+      background: transparent;
+      background-image: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0) 40%,
+        $color-yellow 40%,
+        $color-yellow 100%
+      );
+
+      // text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
+      -webkit-text-stroke-color: $color-yellow;
+      -webkit-text-stroke-width: 1.3px;
+      color: transparent;
+      background-clip: text;
+    }
     &--top-sell {
       background: $color-purple;
     }
@@ -155,7 +178,8 @@ $wrapperWidth: calc(100% + #{$grid-gap});
     }
     pointer-events: none;
     opacity: 0;
-    transition: 0.25s all ease-in-out;
+    will-change: opacity; 
+    transition: 0.4s all ease-in-out;
     position: absolute;
     top: 0;
     left: 0;
@@ -177,6 +201,7 @@ $wrapperWidth: calc(100% + #{$grid-gap});
     border: 1px solid $color-white;
     margin: 0 5px;
     cursor: pointer;
+    will-change: transform; 
     transition: 0.15s all ease-in-out;
     &:hover {
       transform: scale(1.1);

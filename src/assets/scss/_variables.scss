@@ -24,3 +24,12 @@ $color-red:#9F2628;
 $grid-gap: 20px;
 
 $socialsGap: 7px;
+
+@mixin setIconFont(){
+  font-family: 'Glyphter';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
