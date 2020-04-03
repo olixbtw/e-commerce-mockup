@@ -102,10 +102,10 @@
 }
 .search {
   cursor: pointer;
-  transition: 0.1s all ease-in-out;
+  transition: 0.05s all ease-in-out;
   &:hover {
     opacity: 0.9;
-    transform: scale(1.1);
+    transform: scale(1.15);
   }
 }
 

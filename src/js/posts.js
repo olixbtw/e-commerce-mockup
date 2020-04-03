@@ -14,6 +14,9 @@ module.exports = [
       },
       {
         img: 'assets/img/BedSet (9).jpg'
+      },
+      {
+        img: 'assets/img/BedSet (10).jpg'
       }
     ],
     additional: {
@@ -36,6 +39,9 @@ module.exports = [
       },
       {
         img: 'assets/img/BedSet (1).jpg'
+      },
+      {
+        img: 'assets/img/BedSet (2).jpg'
       }
     ],
     additional: {
@@ -63,7 +69,7 @@ module.exports = [
     additional: {
       top: true,
       new: false,
-      rating: 5
+      rating: 1
     }
   },{
     img: 'assets/img/BedSet (4).jpg',
@@ -79,13 +85,19 @@ module.exports = [
         img: 'assets/img/BedSet (7).jpg'
       },
       {
-        img: 'assets/img/BedSet (6).jpg'
+        img: 'assets/img/BedSet (8).jpg'
+      },
+      {
+        img: 'assets/img/BedSet (7).jpg'
+      },
+      {
+        img: 'assets/img/BedSet (9).jpg'
       }
     ],
     additional: {
       top: false,
       new: false,
-      rating: 5
+      rating: 1
     }
   },{
     img: 'assets/img/BedSet (5).jpg',
@@ -107,7 +119,7 @@ module.exports = [
     additional: {
       top: false,
       new: false,
-      rating: 5
+      rating: 2
     }
   },{
     img: 'assets/img/BedSet (6).jpg',
@@ -129,7 +141,7 @@ module.exports = [
     additional: {
       top: false,
       new: false,
-      rating: 4
+      rating: 1
     }
   },{
     img: 'assets/img/BedSet (7).jpg',
@@ -151,7 +163,7 @@ module.exports = [
     additional: {
       top: true,
       new: false,
-      rating: 4
+      rating: 2
     }
   },{
     img: 'assets/img/BedSet (8).jpg',
@@ -173,7 +185,7 @@ module.exports = [
     additional: {
       top: true,
       new: true,
-      rating: 4
+      rating: 3.6
     }
   },{
     img: 'assets/img/BedSet (9).jpg',
@@ -194,8 +206,8 @@ module.exports = [
     ],
     additional: {
       top: true,
-      new: true,
-      rating: 4
+      new: false,
+      rating: 3.4
     }
   },{
     img: 'assets/img/BedSet (10).jpg',
@@ -217,7 +229,7 @@ module.exports = [
     additional: {
       top: true,
       new: true,
-      rating: 5
+      rating: 4
     }
   },{
     img: 'assets/img/BedSet (11).jpg',
@@ -239,7 +251,7 @@ module.exports = [
     additional: {
       top: false,
       new: true,
-      rating: 5
+      rating: 3
     }
   },{
     img: 'assets/img/BedSet (12).jpg',
@@ -261,7 +273,7 @@ module.exports = [
     additional: {
       top: false,
       new: true,
-      rating: 3
+      rating: 5
     }
   },
 ]
