@@ -94,5 +94,5 @@ module.exports = {
       filename: `./${page}`
       // , inject: false
     }))
-  ],
+  ]
 }

@@ -1,32 +1,20 @@
-<template>
-  <div class="news-card blog__item">
-    <figure class="news-card__figure">
-      <img
-        class="news-card__image"
-        src="../assets/images/BedSet (1).jpg"
-        alt="bed sheets image"
-      />
-    </figure>
-    <div class="news-card__content">
-      <span class="news-card__date">Дата</span>
+.blog {
+  padding: 65px 0 86px;
+  &__title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  &__item {
+    width: calc(50% - 10px);
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
 
-      <h4 class="news-card__title">Назва</h4>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore...
-      </p>
-      <a class="news-card__link" href="/">Читати більше  ›</a>
-    </div>
-  </div>
-</template>
-
-<script>
-export default {
-  name: 'NewsItem'
-};
-</script>
-
-<style lang="scss">
 .news-card {
   display: flex;
   background: $color-white;
@@ -72,4 +60,3 @@ export default {
     margin-top: auto;
   }
 }
-</style>
