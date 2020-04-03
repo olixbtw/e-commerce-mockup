@@ -126,12 +126,6 @@ export default {
   &:hover {
     box-shadow: 0px 0px 12px $color-black-025;
     cursor: pointer;
-    .post-card__btn {
-      color: $color-black;
-      &.btn--black {
-        color: $color-white;
-      }
-    }
   }
   &__figure {
     height: 270px;
@@ -194,6 +188,9 @@ export default {
     border: none;
     color: $color-black-05;
     font-size: 14px;
+    &:hover {
+      color: $color-black;
+    }
   }
 }
 
