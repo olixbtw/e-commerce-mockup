@@ -4,6 +4,8 @@
   "description": "My template",
   "main": "entry.js",
   "scripts": {
+    "serve": "webpack-dev-server --open --config ./config/webpack.dev.conf.js",
+    "start": "webpack-dev-server --open --config ./config/webpack.dev.conf.js",
     "dev": "webpack-dev-server --open --config ./config/webpack.dev.conf.js",
     "build": "webpack --config ./config/webpack.build.conf.js"
   },
