@@ -15,14 +15,14 @@
 }
 
 .slider {
-  // position: relative;
-  min-height: 700px;
+  min-height: 696px;
   display: flex;
   align-content: stretch;
   transition: 0.5s margin ease-in-out;
 
   &__item {
-    padding: 40px 70px 130px;
+    padding-top: 50px;
+    padding-bottom: 145px;
     width: 100%;
     flex-shrink: 0;
     transition: 0.75s opacity ease-in-out;
@@ -32,6 +32,8 @@
   @include addSlide(1);
   @include addSlide(2);
   @include addSlide(3);
+  @include addSlide(4);
+  @include addSlide(5);
 }
 
 .slider-controls {
@@ -60,13 +62,17 @@
 }
 
 .slide {
+  width: 100%;
   position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  .container {
+    padding-left: 135px;
+  }
 
   &__title {
-    margin-bottom: 67px;
+    margin-bottom: 73px;
   }
   &__text {
     margin-bottom: 53px;

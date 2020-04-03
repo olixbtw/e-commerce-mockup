@@ -1,7 +1,7 @@
 .header {
   color: $color-black-05;
   background: $color-white;
-  padding: 10px 0 8px;
+  padding: 9px 0 9px;
   &__container {
     display: flex;
     justify-content: space-between;
@@ -22,7 +22,7 @@
     }
   }
   &__section-item {
-    margin-left: 45px;
+    margin-left: 47px;
     &:first-child {
       margin-left: 0;
     }
@@ -37,7 +37,7 @@
   display: flex;
 
   &__item {
-    margin-right: 39px;
+    margin-right: 42px;
     cursor: pointer;
     &:hover {
       color: $color-black;

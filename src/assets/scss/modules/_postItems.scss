@@ -2,7 +2,7 @@
 $wrapperWidth: calc(100% + #{$grid-gap});
 
 .posts {
-  padding: 50px 0 40px;
+  padding: 55px 0 40px;
 
   &--background-dark {
     background: $color-light1;
@@ -50,6 +50,7 @@ $wrapperWidth: calc(100% + #{$grid-gap});
 
 .section-title {
   position: relative;
+  letter-spacing: 0.01em;
   &__expander {
     position: absolute;
     right: 0;
@@ -88,7 +89,7 @@ $wrapperWidth: calc(100% + #{$grid-gap});
     top: 0;
   }
   &__content {
-    padding: 12px 10px 7px;
+    padding: 12px 10px 8px;
   }
   &__title {
     font-size: 20px;
@@ -96,7 +97,7 @@ $wrapperWidth: calc(100% + #{$grid-gap});
   }
   &__price {
     display: block;
-    margin-top: 15px;
+    margin-top: 17px;
     font-size: 18px;
   }
   &__emphasis {
@@ -132,7 +133,7 @@ $wrapperWidth: calc(100% + #{$grid-gap});
   }
   &__btn {
     width: 100%;
-    min-height: 48px;
+    min-height: 50px;
     border: none;
     color: $color-black-05;
     font-size: 14px;
