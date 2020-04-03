@@ -178,7 +178,7 @@ $wrapperWidth: calc(100% + #{$grid-gap});
     }
     pointer-events: none;
     opacity: 0;
-    will-change: opacity; 
+    // will-change: opacity; 
     transition: 0.4s all ease-in-out;
     position: absolute;
     top: 0;
