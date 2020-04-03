@@ -32,8 +32,7 @@ export default {
 </script>
 
 <style lang="scss">
-$gap: 20px;
-$wrapperWidth: calc(100% + #{$gap});
+$wrapperWidth: calc(100% + #{$grid-gap});
 
 .posts {
   padding: 50px 0 40px;
@@ -48,16 +47,18 @@ $wrapperWidth: calc(100% + #{$gap});
   }
   &__wrapper {
     overflow: hidden;
-    width: $wrapperWidth;
-    margin-left: -$gap / 2;
     display: flex;
+    width: $wrapperWidth;
+    margin-left: -$grid-gap / 2;
   }
   &__item {
     flex-shrink: 0;
     width: 25%;
-    padding: $gap $gap/2;
+    padding: $grid-gap $grid-gap/2;
   }
   &__arrow {
+    $arrowOffset: 31px;
+
     padding: 7px;
     font-size: 45px;
     position: absolute;
@@ -67,13 +68,12 @@ $wrapperWidth: calc(100% + #{$gap});
     &:hover {
       color: $color-black;
     }
-    $arrOffset: 31px;
     &--left {
-      left: $arrOffset;
+      left: $arrowOffset;
       transform: scaleX(-1);
     }
     &--right {
-      right: $arrOffset;
+      right: $arrowOffset;
     }
   }
   .container {
