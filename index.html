@@ -1,1 +1,307 @@
-<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=favicon.ico><title>verstka-e-commerce</title><link href=css/app.01d3297a.css rel=preload as=style><link href=js/app.504086de.js rel=preload as=script><link href=js/chunk-vendors.bf1a2e81.js rel=preload as=script><link href=css/app.01d3297a.css rel=stylesheet></head><body><noscript><strong>We're sorry but verstka-e-commerce doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script src=js/chunk-vendors.bf1a2e81.js></script><script src=js/app.504086de.js></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>E Commerce</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__section header__section--left">
+        <nav class="header__navigation">
+          <ul class="navigation">
+            <li class="navigation__item">
+              <a class="navigation__link" href="/">Про Компанію</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="/">Каталог</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="/">Питання та Відповіді</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="language-switcher">
+          <li class="language-switcher__item active">Укр</li>
+          <li class="language-switcher__item">Рос</li>
+        </ul>
+      </div>
+      <div class="header__section header__section--middle">
+        <a href="/">
+          <img src="assets/img/icons/Logo.svg" alt="Logo" />
+        </a>
+      </div>
+      <div class="header__section header__section--right">
+        <div class="header__search header__section-item search">
+          <img src="assets/img/icons/search.svg" alt="search" />
+        </div>
+        <div class="header__cart header__section-item cart">
+          <figure class="cart__image">
+            <img src="assets/img/icons/cart.svg" alt="cart" />
+            <figcaption class="cart__total">
+              12
+            </figcaption>
+          </figure>
+          Кошик
+        </div>
+        <button class="header__login header__section-item btn btn--empty">
+          Мій кабінет
+        </button>
+        <ul class="header__socials header__section-item socials">
+          <li class="socials__item">
+            <a class="socials__link" href="/"> C </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="/"> E </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="/"> B </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="/"> D </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <section class="hero">
+    <ul class="slider hero__slider slider--item-active-1">
+      <li class="slide slider__item">
+        <div class="container">
+          <h1 class="slide__title">Титулка</h1>
+
+          <p class="slide__text">
+            Опис. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+
+          <button class="btn btn--big slide__button btn--black">
+            Дізнатись більше ›
+          </button>
+
+          <img class="slide__background" src="assets/img/Hero.jpg" alt="bed sheets background" />
+        </div>
+      </li>
+      <li class="slide slider__item">
+        <div class="container">
+          <h1 class="slide__title">Титулка2</h1>
+
+          <p class="slide__text">
+            Опис. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+
+          <button class="btn btn--big slide__button btn--black">
+            Дізнатись більше ›
+          </button>
+          <img class="slide__background" src="assets/img/Hero.jpg" alt="bed sheets background" />
+        </div>
+      </li>
+      <li class="slide slider__item">
+        <div class="container">
+          <h1 class="slide__title">Титулка3</h1>
+
+          <p class="slide__text">
+            Опис. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+
+          <button class="btn btn--big slide__button btn--black">
+            Дізнатись більше ›
+          </button>
+          <img class="slide__background" src="assets/img/Hero.jpg" alt="bed sheets background" />
+        </div>
+      </li>
+      <ul class="slider__controls slider-controls" id="sliderControl">
+        <li class="slider-controls__item active"></li>
+        <li class="slider-controls__item"></li>
+        <li class="slider-controls__item"></li>
+      </ul>
+    </ul>
+  </section>
+  <section class="advantages">
+    <div class="container">
+      <h3 class="advantages__title">Наші Переваги</h3>
+      <ul class="advantages__wrapper">
+        <li class="advantages__item"><img class="advantages__image" src="assets/img/advantages6.svg"
+            alt="advantage image 6">
+          <h4 class="advantages__text">30 000<br>Тканин у наявності</h4>
+        </li>
+        <li class="advantages__item"><img class="advantages__image" src="assets/img/advantages2.svg"
+            alt="advantage image 2">
+          <h4 class="advantages__text">25<br>Країн світу -<br>постачальники</h4>
+        </li>
+        <li class="advantages__item"><img class="advantages__image" src="assets/img/advantages3.svg"
+            alt="advantage image 3">
+          <h4 class="advantages__text">Висока<br>якість Товару</h4>
+        </li>
+        <li class="advantages__item"><img class="advantages__image" src="assets/img/advantages5.svg"
+            alt="advantage image 5">
+          <h4 class="advantages__text">150 000<br>Роздрібних замовлень</h4>
+        </li>
+        <li class="advantages__item"><img class="advantages__image" src="assets/img/advantages4.svg"
+            alt="advantage image 4">
+          <h4 class="advantages__text">24/7<br>Служба Підтримки</h4>
+        </li>
+        <li class="advantages__item"><img class="advantages__image" src="assets/img/advantages1.svg"
+            alt="advantage image 1">
+          <h4 class="advantages__text">15 000<br>Постійних Клієнтів</h4>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="posts-top-sell" class="posts posts--background-dark"></section>
+  <section id="posts-top-rated" class="posts"></section>
+  <section id="posts-newest" class="posts posts--background-dark"></section>
+
+  <section class="blog">
+    <div class="container">
+      <h2 class="blog__title section-title">
+        Новини
+        <span class="section-title__expander">Дивитись Всі</span>
+      </h2>
+
+      <div class="news-card blog__item">
+        <figure class="news-card__figure">
+          <img class="news-card__image" src="assets/img/BedSet (1).jpg" alt="bed sheets image" />
+        </figure>
+        <div class="news-card__content">
+          <span class="news-card__date">Дата</span>
+
+          <h4 class="news-card__title">Назва</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore...
+          </p>
+          <a class="news-card__link" href="/">Читати більше ›</a>
+        </div>
+      </div>
+      <div class="news-card blog__item">
+        <figure class="news-card__figure">
+          <img class="news-card__image" src="assets/img/BedSet (5).jpg" alt="bed sheets image" />
+        </figure>
+        <div class="news-card__content">
+          <span class="news-card__date">Дата</span>
+
+          <h4 class="news-card__title">Назва</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore...
+          </p>
+          <a class="news-card__link" href="/">Читати більше ›</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cta">
+    <div class="container">
+      <h2 class="cta__title section-title">Підписатися на актуальні розсилки</h2>
+      <p class="cta__subtitle">
+        Будьте в курсі нових подій та спеціальних пропозицій
+      </p>
+      <form class="cta__form form" id="ctaForm">
+        <!-- 
+          to make a colorful star * in a placeholder, labels need to be added. 
+          to keep code cleaner, decided to leave grey-colored placeholders 
+        -->
+        <input class="form__input form__input--text" placeholder="Ім'я*" type="text" required />
+        <input class="form__input form__input--text" placeholder="Компанія" type="text" />
+        <input class="form__input form__input--text" placeholder="email*" type="email" required />
+        <button class="btn btn--black" type="submit">Підписатися</button>
+        <p class="form__help">* - обов’язкове поле для заповнення</p>
+      </form>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <nav>
+        <ul class="footer__menu">
+          <li>
+            <h6 class="footer__submenu-title">
+              <a class="footer__link" href="/">Про Компанію</a>
+            </h6>
+            <ul>
+              <li><a class="footer__link" href="/">Власне Виробництво</a></li>
+              <li><a class="footer__link" href="/">Новини</a></li>
+              <li><a class="footer__link" href="/">Доставка і Оплата</a></li>
+              <li><a class="footer__link" href="/">Контакти</a></li>
+              <li><a class="footer__link" href="/">FAQ</a></li>
+              <li>
+                <a class="footer__link" href="/">Політика Конфіденційності</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h6 class="footer__submenu-title">
+              <a class="footer__link" href="/">Каталог Товарів</a>
+            </h6>
+            <ul>
+              <li><a class="footer__link" href="/">Новинки</a></li>
+              <li><a class="footer__link" href="/">Топ Продаж</a></li>
+              <li>
+                <a class="footer__link" href="/">Кращі Товари по Рейтингу</a>
+              </li>
+              <li><a class="footer__link" href="/">Акції</a></li>
+              <li><a class="footer__link" href="/">Всі Тканини</a></li>
+              <li><a class="footer__link" href="/">Для дому</a></li>
+              <li><a class="footer__link" href="/">Для одягу</a></li>
+              <li><a class="footer__link" href="/">Спеціальні Тканини</a></li>
+              <li><a class="footer__link" href="/">Хутро</a></li>
+            </ul>
+          </li>
+          <li>
+            <h6 class="footer__submenu-title">
+              <a class="footer__link" href="/">Особистий Кабінет</a>
+            </h6>
+            <ul>
+              <li>
+                <a class="footer__link" href="/">Створення Особистого Кабінету</a>
+              </li>
+              <li><a class="footer__link" href="/">Логін</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="footer__language-switcher language-switcher">
+              <li class="language-switcher__item active">Укр</li>
+              <li class="language-switcher__item">Рос</li>
+            </ul>
+
+            <ul class="footer__socials socials">
+              <li class="socials__item">
+                <a class="socials__link" href="/"> C </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="/"> E </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="/"> B </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="/"> D </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="copyright">
+        Copyright © 2020 ТК-ДОМАШНІЙ ТЕКСТИЛЬ
+      </div>
+    </div>
+  </footer>
+
+  <link href="assets/css/app.css" rel="stylesheet">
+  <link href="assets/fonts/icons/Glyphter.css" rel="stylesheet">
+
+  <script type="text/javascript" src="./assets/js/vendors.js"></script>
+  <script type="text/javascript" src="./assets/js/app.js"></script>
+
+  <link href="assets/fonts/roboto/roboto.css" rel="stylesheet">
+</body>
+
+</html>
