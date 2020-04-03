@@ -70,42 +70,9 @@
   }
 }
 
-.language-switcher {
-  display: flex;
-  &__item {
-    margin-right: 8px;
-    cursor: pointer;
-    &:hover {
-      color: $color-black;
-    }
-    &.active {
-      text-decoration: underline;
-    }
-  }
-}
-
-.socials {
-  @include setIconFont();
-
-  display: flex;
-  margin-right: -$socialsGap;
-  &__item {
-    font-size: 33px;
-    color: $color-black-05;
-    margin: 0 $socialsGap;
-    transition: 0.2s color ease-in-out;
-    &:hover {
-      color: $color-black;
-    }
-  }
-  &__link {
-    display: block;
-    color: inherit;
-  }
-}
 .search {
   cursor: pointer;
-  will-change: transform; 
+  will-change: transform;
   transition: 0.15s all ease-in-out;
   &:hover {
     opacity: 0.9;

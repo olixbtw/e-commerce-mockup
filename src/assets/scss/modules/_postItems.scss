@@ -33,7 +33,7 @@ $wrapperWidth: calc(100% + #{$grid-gap});
     top: 50%;
     color: $color-black-05;
     cursor: pointer;
-    will-change: opacity; 
+    will-change: opacity;
     transition: 0.1s all ease-in-out;
     user-select: none;
     &:hover {
@@ -55,30 +55,11 @@ $wrapperWidth: calc(100% + #{$grid-gap});
   }
 }
 
-.section-title {
-  position: relative;
-  letter-spacing: 0.01em;
-  &__expander {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    color: $color-black-05;
-    font-size: 16px;
-    cursor: pointer;
-
-    transition: 0.1s all ease-in-out;
-    &:hover {
-      color: $color-black-066;
-    }
-  }
-}
-
 .post-card {
   position: relative;
   background: $color-white;
 
-  will-change: box-shadow; 
+  will-change: box-shadow;
   transition: 0.25s box-shadow ease-in-out;
   box-shadow: 0px 0px 6px $color-black-01;
   &:hover {
@@ -119,12 +100,16 @@ $wrapperWidth: calc(100% + #{$grid-gap});
     border-radius: 5px;
     padding: 4px 9px;
     text-transform: uppercase;
+    letter-spacing: 0.06em;
 
     &--rating {
-      letter-spacing: 1.5px;
       font-size: 20px;
       @include setIconFont();
       background: transparent;
+      background-clip: text;
+      color: transparent;
+      -webkit-text-stroke-width: 0.06em;
+      -webkit-text-stroke-color: $color-yellow;
       background-image: linear-gradient(
         90deg,
         rgba(0, 0, 0, 0) 0%,
@@ -132,12 +117,6 @@ $wrapperWidth: calc(100% + #{$grid-gap});
         $color-yellow 40%,
         $color-yellow 100%
       );
-
-      // text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
-      -webkit-text-stroke-color: $color-yellow;
-      -webkit-text-stroke-width: 1.3px;
-      color: transparent;
-      background-clip: text;
     }
     &--top-sell {
       background: $color-purple;
@@ -178,7 +157,6 @@ $wrapperWidth: calc(100% + #{$grid-gap});
     }
     pointer-events: none;
     opacity: 0;
-    // will-change: opacity; 
     transition: 0.4s all ease-in-out;
     position: absolute;
     top: 0;
@@ -201,7 +179,7 @@ $wrapperWidth: calc(100% + #{$grid-gap});
     border: 1px solid $color-white;
     margin: 0 5px;
     cursor: pointer;
-    will-change: transform; 
+    will-change: transform;
     transition: 0.15s all ease-in-out;
     &:hover {
       transform: scale(1.1);

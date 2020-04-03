@@ -2,12 +2,6 @@
 
 import allPosts from './posts';
 
-const filters = {
-  topSell: 'Топ Продажу',
-  topRated: 'Кращі Товари по Рейтингу',
-  newest: 'Новинки'
-}
-
 const ctaForm = document.getElementById('ctaForm');
 const sliderControl = document.getElementById('sliderControl');
 
@@ -17,22 +11,15 @@ const postsSectionNewest = document.getElementById('posts-newest');
 
 
 
-window.addEventListener('load', onWindowLoad)
-ctaForm.addEventListener('submit', formSubmitHandler)
 sliderControl.addEventListener('click', changeSliderSlides)
-
-function formSubmitHandler(e) {
-  e.preventDefault()
-  console.log(e.target)
-}
+ctaForm.addEventListener('submit', formSubmitHandler)
+window.addEventListener('load', onWindowLoad)
 
 function changeSliderSlides(e) {
   let oldClass,
     newClass,
     controlsElement = e.target.parentElement,
     sliderElement = e.target.parentElement.parentElement;
-
-  // console.log(controlsElement.getElementsByTagName('li'))
 
   collectionToArray(controlsElement.getElementsByTagName('li')).forEach((el, i) => {
     if (e.target === el) newClass = `slider--item-active-${i + 1}`;
@@ -51,13 +38,19 @@ function changeSliderSlides(e) {
   }
 }
 
+function formSubmitHandler(e) {
+  e.preventDefault()
+  console.log(e.target)
+}
+
 function onWindowLoad() {
   fillSections()
 
   const postArrows = document.getElementsByClassName('posts__arrow');
-  collectionToArray(postArrows).map(e => e.addEventListener('click', arrowsHandler))
+  collectionToArray(postArrows).map(arrowElement =>
+    arrowElement.addEventListener('click', arrowsHandler)
+  )
 }
-
 
 function arrowsHandler(e) {
   let movedAlready, nextMove;
@@ -99,6 +92,12 @@ function arrowsHandler(e) {
 }
 
 function fillSections() {
+  const filters = {
+    topSell: 'Топ Продажу',
+    topRated: 'Кращі Товари по Рейтингу',
+    newest: 'Новинки'
+  }
+
   postsSectionTopSell.innerHTML = generateSection([...allPosts.filter(post => post.additional.top)], filters.topSell)
   postsSectionNewest.innerHTML = generateSection([...allPosts.filter(post => post.additional.new)], filters.newest)
   postsSectionTopRated.innerHTML = generateSection([...allPosts.sort((b, a) => a.additional.rating - b.additional.rating)], filters.topRated)
@@ -212,6 +211,7 @@ function fillSections() {
     `
   }
 }
+
 
 const collectionToArray = (collection) => {
   let arr = [];

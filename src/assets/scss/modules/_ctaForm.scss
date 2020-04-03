@@ -33,39 +33,3 @@
   }
 }
 
-.form {
-  &__input {
-    font-size: 19px;
-    background: $color-white;
-    border-width: 2px;
-    border-style: solid;
-    border-color: $color-white;
-    color: $color-black;
-    outline: none;
-
-    will-change: all;
-    transition: 0.2s all ease-in-out;
-    &--text {
-      padding: 11px 11px 8px;
-
-      &:active {
-        border-style: dashed;
-        border-color: $color-black-05;
-      }
-      &:focus {
-        outline: none;
-        border-style: dashed;
-        border-color: $color-black;
-      }
-      &::placeholder {
-        color: $color-black-05;
-      }
-    }
-  }
-  &__help {
-    width: 100%;
-    text-align: center;
-    color: $color-black-05;
-    margin-top: 18px;
-  }
-}
