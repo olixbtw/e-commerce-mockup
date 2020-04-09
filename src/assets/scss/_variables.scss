@@ -1,4 +1,5 @@
 $color-black: #000;
+$color-black-075: rgba($color-black, 0.75);
 $color-black-066: rgba($color-black, 0.66);
 $color-black-05: rgba($color-black, 0.5);
 $color-black-025: rgba($color-black, 0.25);
@@ -11,21 +12,20 @@ $color-white-05: rgba($color-white, 0.5);
 $color-white-03: rgba($color-white, 0.3);
 
 $color-light1: #f2f2f2;
-$color-light2: #C4C4C4;
+$color-light2: #c4c4c4;
 $color-light3: #525252;
 
-$color-purple: #8A4E78;
-$color-yellow: #FFC700;
+$color-purple: #8a4e78;
+$color-yellow: #ffc700;
 $color-green: #839950;
-$color-red:#9F2628;
+$color-red: #9f2628;
 
-
-
+$borad-global: 5px;
 $grid-gap: 20px;
 
 $socialsGap: 7px;
 
-@mixin setIconFont(){
+@mixin setIconFont() {
   font-family: 'Glyphter';
   font-style: normal;
   font-weight: normal;

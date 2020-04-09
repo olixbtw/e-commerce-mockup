@@ -18,7 +18,7 @@
   min-height: 696px;
   display: flex;
   align-content: stretch;
-  will-change: margin; 
+  will-change: margin;
   transition: 0.5s margin ease-in-out;
 
   &__item {
@@ -26,7 +26,7 @@
     padding-bottom: 145px;
     width: 100%;
     flex-shrink: 0;
-    will-change: opacity; 
+    will-change: opacity;
     transition: 0.75s opacity ease-in-out;
     opacity: 0.75;
   }
@@ -54,7 +54,7 @@
     margin: 5px;
     cursor: pointer;
 
-    will-change: transform; 
+    will-change: transform;
     transition: 0.1s all ease-in-out;
     &.active {
       background: $color-light2;
@@ -93,10 +93,12 @@
     height: 100%;
     z-index: -1;
     object-fit: cover;
+    object-position: center;
   }
   &__button {
     &:hover {
       box-shadow: 2px 4px 8px $color-black-01;
+      background: $color-black-075;
     }
   }
 }

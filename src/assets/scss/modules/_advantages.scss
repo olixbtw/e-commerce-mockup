@@ -17,12 +17,13 @@
     justify-self: center;
     
     will-change: transform; 
-    transition: 1s transform ease-in-out;
+    transition: .5s all ease-in-out;
+    transform: scale(1.01);
   }
   &__item {
     &:hover {
       .advantages__image {
-        transform: scale(1.1);
+        transform: scale(1.15);
       }
     }
     min-height: 160px;

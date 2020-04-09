@@ -17,18 +17,21 @@ $padY: 6px;
   background: $color-white;
   color: $color-black;
 
-  transition: 0.15s all ease-in-out;
-
+  transition: 0.2s all ease-in-out;
+  border-radius: 5px;
+  
+  &:hover {
+    box-shadow: 0 0 5px $color-black-025;
+  }
   &--empty {
-    border-radius: 5px;
     background: transparent;
     border-style: dashed;
     color: $color-black-05;
     border-color: $color-black-05;
 
     &:hover {
-      color: $color-black-066;
-      border-color: $color-black-066;
+      color: $color-black-075;
+      border-color: $color-black-075;
     }
   }
   &--big {
